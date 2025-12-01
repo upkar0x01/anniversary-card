@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Anniversary Bhaiya & Bhabhi!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- CSS Styling for Dark Theme --- */
+        :root {
+            --primary-color: #ff5252; /* Brighter Red for dark theme */
+            --secondary-color: #ffeb3b; /* Brighter Gold for dark theme */
+            --bg-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); /* Dark Blue-Purple Gradient */
+            --card-bg: rgba(25, 33, 56, 0.85); /* Slightly transparent dark card */
+            --text-light: #e0e0e0; /* Light grey text */
+            --text-lighter: #f0f0f0; /* Lighter grey text */
+            --border-dark: rgba(255, 235, 59, 0.3); /* Subtle gold border */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--bg-gradient);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            overflow-x: hidden;
+            color: var(--text-light); /* Default text color for body */
+        }
+
+        .container {
+            background: var(--card-bg);
+            padding: 40px 30px;
+            border-radius: 25px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.4); /* Darker shadow for dark theme */
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+            border: 2px solid var(--border-dark);
+            animation: fadeInUp 1s ease-out;
+            backdrop-filter: blur(10px); /* Glassmorphism effect */
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            font-family: 'Great Vibes', cursive;
+            color: var(--primary-color);
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px rgba(255, 82, 82, 0.5); /* Glowing effect for heading */
+        }
+
+        h2 {
+            color: var(--text-lighter);
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            font-weight: 500;
+        }
+
+        .image-container {
+            width: 220px;
+            height: 220px;
+            margin: 0 auto 30px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid var(--secondary-color);
+            box-shadow: 0 8px 20px rgba(255, 235, 59, 0.3); /* Gold glow for image */
+            animation: heartbeat 3s infinite ease-in-out;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .message p {
+            color: var(--text-light);
+            line-height: 1.6;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .highlight {
+            color: var(--primary-color);
+            font-weight: 700;
+            text-shadow: 0 0 5px rgba(255, 82, 82, 0.3);
+        }
+
+        .celebrate-btn {
+            margin-top: 25px;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            color: #1a1a2e; /* Dark text for bright button */
+            background: linear-gradient(45deg, var(--secondary-color), #ff9800); /* Gold-Orange Gradient */
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 10px 25px -10px rgba(255, 235, 59, 0.6);
+            transition: all 0.3s ease;
+            outline: none;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .celebrate-btn:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 15px 30px -10px rgba(255, 235, 59, 0.8);
+            background: linear-gradient(45deg, #ff9800, var(--secondary-color));
+        }
+
+        .celebrate-btn:active {
+            transform: scale(0.98);
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.03); box-shadow: 0 8px 25px rgba(255, 235, 59, 0.5); } /* More prominent glow */
+            100% { transform: scale(1); }
+        }
+
+        @media (max-width: 400px) {
+            h1 { font-size: 2.8rem; }
+            .image-container { width: 180px; height: 180px; }
+            .celebrate-btn { padding: 12px 30px; font-size: 1rem; }
+            .container { padding: 30px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Happy Anniversary!</h1>
+            <h2>Pyare Bhaiya aur Bhabhi ❤️</h2>
+        </header>
+
+        <div class="image-container">
+            <img src="images/249512645_312548876984995_829897702419855684_n.webp" alt="Bhaiya Bhabhi Photo">
+        </div>
+
+        <div class="message">
+            <p>Aap dono ki jodi hamesha salamat rahe aur aise hi chamakti rahe.</p>
+            <p>Aapki life mein dher saari <span class="highlight">Khushiyan</span>, <span class="highlight">Pyaar</span> aur <span class="highlight">Success</span> bani rahe.</p>
+            <p>Bhagwan aapko duniya ki saari khushiyan de. Keep smiling always!</p>
+        </div>
+
+        <footer>
+            <button class="celebrate-btn" id="celebrateBtn">🎉 Wish Karein (Click Me) 🎉</button>
+            <p style="margin-top: 20px; font-size: 0.9rem; color: #aaa;">With Love,Upkar Maurya</p>
+        </footer>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    
+    <script>
+        /* --- JavaScript for Interaction --- */
+        const button = document.getElementById('celebrateBtn');
+
+        button.addEventListener('click', () => {
+            // Trigger confetti explosion with colors suitable for dark theme
+            confetti({
+                particleCount: 150,
+                spread: 100,
+                origin: { y: 0.6 },
+                colors: ['#ff5252', '#ffeb3b', '#e0e0e0', '#ffa726', '#1a1a2e'], // Red, Gold, Light Grey, Orange, Dark Blue
+                disableForReducedMotion: true
+            });
+
+            // Change button text temporarily in Hinglish
+            const originalText = button.innerHTML;
+            button.innerHTML = "✨ Yay! Celebrations! ✨";
+            button.style.background = "linear-gradient(45deg, #ff9800, #ffeb3b)"; // Brighter gradient for temporary state
+            
+            setTimeout(() => {
+                button.innerHTML = originalText;
+                button.style.background = ""; // Reset background to original dark theme button gradient
+            }, 3000);
+        });
+    </script>
+
+</body>
+</html>
